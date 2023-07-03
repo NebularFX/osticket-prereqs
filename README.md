@@ -135,10 +135,11 @@ Once you have opened IIS manager, double-click on PHP Manager. Here you will reg
 <br />
 
 <p>
-<img src="https://i.imgur.com/heE2AGq.png" height="60%" width="60%" alt="Renaming Folder"/>
+<img src="https://i.imgur.com/heE2AGq.png" height="80%" width="80%" alt="Renaming Folder"/>
 </p>
 <p>
 Now we can finally get to installing osTicket. Head over to the installation files and download osTicket.
+  
   - Extract and copy the "upload" folder to C:\inetpub\wwwroot
   - Within C:\inetpub\wwwroot rename "upload" to "osTicket"
 </p>
