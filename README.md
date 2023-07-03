@@ -80,3 +80,67 @@ We'll start this section off by opening up the edge browser on the VM and pastin
 Now we need to go to the control panel and navigate to Programs and Features -> Turn Windows Features on or off. Here we will check the following folders you see pictured above. Don't forget to also go under Application Development Features and check CGI (not pictured). Hit "ok" and wait for the changes to be applied. 
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/U1LnAfV.png" height="80%" width="80%" alt="PHP manager install"/>
+</p>
+<p>
+Let's get started with the downloads, shall we? We'll begin by downloading and installing "PHPManagerForIIS_V1.5.0.msi" and "rewrite_amd64_en-US.msi" from the installation files.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/zICplet.png" height="60%" width="60%" alt="PHP Directory Creation"/>
+</p>
+<p>
+Next, we'll create the directory C:\PHP
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/MdcBJvl.png" height="60%" width="60%" alt="unzip contents"/>
+</p>
+<p>
+Now we'll go back to the installation files, download "php-7.3.8-nts-Win32-VC15-x86.zip" and unzip the contents into the C:\PHP directory.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/psqDHe6.png" height="80%" width="80%" alt="Install files"/>
+</p>
+<p>
+Back to the installation files we go and now we'll download and install both "VC_redist.x86.exe" and "mysql-5.5.62-win32.msi". When installing MySQL: 
+
+  - Typical Setup ->
+  - Launch Configuration Wizard (after install) ->
+  - Standard Configuration ->
+  - "Password1" for the password
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/cl7odnK.png" height="80%" width="80%" alt="Opening IIS"/>
+</p>
+<p>
+Next up is opening IIS as an Admin. Type "iis" in the search bar, then right click and "run as administrator".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/j9r3vvL.png" height="80%" width="80%" alt="Registering PHP"/>
+</p>
+<p>
+Once you have opened IIS manager, double-click on PHP Manager. Here you will register the new PHP version by selecting the php-cgi executable file.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/heE2AGq.png" height="60%" width="60%" alt="Renaming Folder"/>
+</p>
+<p>
+Now we can finally get to installing osTicket. Head over to the installation files and download osTicket.
+  - Extract and copy the "upload" folder to C:\inetpub\wwwroot
+  - Within C:\inetpub\wwwroot rename "upload" to "osTicket"
+</p>
+<br />
+
